@@ -7,27 +7,25 @@ var firstQuotes = [
      "I love singing"
 ];
 var secondQuotes = [
-    "funny life",
+    "lovely life",
     " you are good",
     " all your life"
 ];
+var thirdQuotes =[
+  " this good",
+  " best to learn",
+  " remember the lesson"
+];
 
-// functions
-function generateQuote() {
-    var randomNumber1 = Math.floor(Math.random() *  (firstQuotes.length));
-    var randomNumber2 = Math.floor(Math.random() *  (secondQuotes.length));
-    for (let i = 0; i < firstQuotes.length + secondQuotes.length; i++);
-}
+console.log(firstQuotes);
+console.log(secondQuotes);
+console.log(thirdQuotes);
 
-//test our code
- var quoteNumbers = prompt("How many quotes you would like to generate?",);
- let quotesArray = [];
-  for(let i = 0; i <  quotesArray.length ; i++) {
-    if(randomQuote === quotesArray.length) {
-        quoteNumbers += 1;
-    }
-    else {
-        quoteNumbers == 0;
-  }
-  }
+var firstQ = Math.floor(Math.random() * firstQuotes.length)
+var secondQ = Math.floor(Math.random() * secondQuotes.length)
+var thirdQ = Math.floor(Math.random() * thirdQuotes.length)
+for( var i = 0 ; i < firstQuotes.length + secondQuotes.length + thirdQuotes.length ; i++)
+var newQuotes = firstQuotes[firstQ]+ " " +secondQuotes[secondQ] + " " + thirdQuotes[thirdQ];
   
+  console.log(newQuotes);
+ var funny = prompt("this is the result");
